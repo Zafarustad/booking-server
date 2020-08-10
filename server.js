@@ -52,14 +52,7 @@ app.listen(PORT, () => {
       if (error) throw error;
       db = client.db(config.dbName);
       collection = db.collection(config.dbCollection);
-      // collection.createIndex(
-      //   { bookingDate: 1 },
-      //   { unique: true },
-      //   (error, result) => {
-      //     if (error) throw error;
-      //   }
-      // );
-      console.log(`Connected to ${config.dbName} on ${PORT}`);
+      `Connected to ${config.dbName} on ${PORT}`;
     }
   );
 });
